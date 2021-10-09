@@ -63,10 +63,6 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 
 <section class="notes">
 
-## Notes
-
--   While Unicode aware, the function does not currently support extended grapheme clusters.
-
 </section>
 
 <!-- /.notes -->
@@ -155,6 +151,16 @@ raboof
 </section>
 
 <!-- /.cli -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
 <section class="main-repo" >
