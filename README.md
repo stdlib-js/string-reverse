@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.0.9-deno/mod.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
 ```
 
 #### reverseString( str )
@@ -66,7 +66,7 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.0.9-deno/mod.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
 
 var str = reverseString( 'last man standing' );
 // returns 'gnidnats nam tsal'
