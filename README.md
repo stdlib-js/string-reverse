@@ -187,16 +187,16 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/string-reverse-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/string-reverse-cli
 
-[test-image]: https://github.com/stdlib-js/string-reverse/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/string-reverse/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/string-reverse@v0.1.0/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/actions/workflows/test.yml?query=branch:v0.1.0
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-reverse/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/string-reverse?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-reverse@v0.1.0/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/string-reverse@v0.1.0?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/string-reverse.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/string-reverse/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/string-reverse@v0.1.0.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/string-reverse@v0.1.0/main
 
 -->
 
@@ -207,19 +207,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/string-reverse#cli
-[cli-url]: https://github.com/stdlib-js/string-reverse/tree/cli
-[@stdlib/string-reverse]: https://github.com/stdlib-js/string-reverse/tree/main
+[cli-section]: https://github.com/stdlib-js/string-reverse@v0.1.0#cli
+[cli-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/tree/cli
+[@stdlib/string-reverse]: https://github.com/stdlib-js/string-reverse@v0.1.0/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/string-reverse/tree/deno
-[umd-url]: https://github.com/stdlib-js/string-reverse/tree/umd
-[esm-url]: https://github.com/stdlib-js/string-reverse/tree/esm
-[branches-url]: https://github.com/stdlib-js/string-reverse/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/tree/deno
+[umd-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/tree/umd
+[esm-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/tree/esm
+[branches-url]: https://github.com/stdlib-js/string-reverse@v0.1.0/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-reverse/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-reverse@v0.1.0/main/LICENSE
 
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
