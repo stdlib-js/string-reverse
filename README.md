@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@esm/index.mjs';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.1.0-esm/index.mjs';
 ```
 
 #### reverseString( str )
@@ -82,7 +82,7 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 <body>
 <script type="module">
 
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@esm/index.mjs';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.1.0-esm/index.mjs';
 
 var str = reverseString( 'last man standing' );
 // returns 'gnidnats nam tsal'
