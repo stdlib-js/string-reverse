@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-reverse/tags). For example,
+
+```javascript
 import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.1.0-deno/mod.js';
 ```
 
@@ -77,7 +82,7 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.1.0-deno/mod.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
 
 var str = reverseString( 'last man standing' );
 // returns 'gnidnats nam tsal'
