@@ -35,17 +35,34 @@ limitations under the License.
 
 > Reverse a string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-reverse
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@esm/index.mjs';
+var reverseString = require( '@stdlib/string-reverse' );
 ```
 
-#### reverseString( str )
+#### reverseString( str\[, options] )
 
 Reverses a `string`.
 
@@ -60,11 +77,27 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 // returns '.teͨ͆ma tis rolod 𝌆 muspi meroL'
 ```
 
+The function supports the following options:
+
+-   **mode**: type of characters to reverse. Must be one of the following:
+
+    -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+    -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code unit (e.g., ideographic symbols and punctuation and mathematical alphanumerics).
+    -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+
+    Default: `'grapheme'`.
+
 </section>
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
+
+## Notes
+
+-   By default, the function assumes the general case in which an input string may contain an arbitrary number of grapheme clusters. This assumption comes with a performance cost. Accordingly, if an input string is known to only contain visual characters of a particular type (e.g., only alphanumeric), one can achieve better performance by specifying the appropriate `mode` option.
 
 </section>
 
@@ -76,13 +109,8 @@ out = reverseString( 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@esm/index.mjs';
+```javascript
+var reverseString = require( '@stdlib/string-reverse' );
 
 var str = reverseString( 'last man standing' );
 // returns 'gnidnats nam tsal'
@@ -95,17 +123,104 @@ str = reverseString( 'javaScript' );
 
 str = reverseString( 'Hidden Treasures' );
 // returns 'serusaerT neddiH'
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/string-reverse-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: reverse [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --mode mode           Type of character to return. Default: 'grapheme'.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'beep\nboop' | reverse --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'beep\nboop' | reverse --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ reverse foobar
+raboof
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'foobar' | reverse
+raboof
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'foobar\tbaz' | reverse --split '\t'
+raboof
+zab
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -124,7 +239,7 @@ str = reverseString( 'Hidden Treasures' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
