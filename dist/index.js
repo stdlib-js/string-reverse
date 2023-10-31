@@ -1,5 +1,5 @@
-"use strict";var v=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var n=v(function(g,u){
-var s=require('@stdlib/string-prev-grapheme-cluster-break/dist'),o=require('@stdlib/assert-is-string/dist').isPrimitive,m=require('@stdlib/error-tools-fmtprodmsg/dist');function h(r){var e,t,i,a;if(!o(r))throw new TypeError(m('1PL3F',r));if(r==="")return"";for(e=[],i=r.length-1;i>=0;){for(t=s(r,i),a=t+1;a<=i;a++)e.push(r.charAt(a));i=t}return e.join("")}u.exports=h
-});var p=n();module.exports=p;
+"use strict";var u=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var s=u(function(y,n){
+var m=require('@stdlib/assert-is-string/dist').isPrimitive,v=require('@stdlib/assert-is-plain-object/dist'),d=require('@stdlib/assert-has-own-property/dist'),p=require('@stdlib/array-base-assert-contains/dist').factory,g=require('@stdlib/string-base-reverse/dist'),c=require('@stdlib/string-base-reverse-code-points/dist'),f=require('@stdlib/string-base-reverse-grapheme-clusters/dist'),o=require('@stdlib/error-tools-fmtprodmsg/dist'),a=["grapheme","code_point","code_unit"],l={grapheme:f,code_point:c,code_unit:g},h=p(a);function q(r){var e,t,i;if(!m(r))throw new TypeError(o('1PL3F',r));if(i={mode:"grapheme"},t=arguments.length,t>1&&(e=arguments[1],!v(e)))throw new TypeError(o('1PL2V',e));if(e&&d(e,"mode")&&(i.mode=e.mode,!h(i.mode)))throw new TypeError(o('1PLE1',"mode",a.join('", "'),i.mode));return l[i.mode](r)}n.exports=q
+});var w=s();module.exports=w;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
