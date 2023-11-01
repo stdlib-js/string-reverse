@@ -53,7 +53,7 @@
     "@stdlib/string-base-reverse": "github:stdlib-js/string-base-reverse#main",
     "@stdlib/string-base-reverse-code-points": "github:stdlib-js/string-base-reverse-code-points#main",
     "@stdlib/string-base-reverse-grapheme-clusters": "github:stdlib-js/string-base-reverse-grapheme-clusters#main",
-    "@stdlib/string-format": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1",
     "@stdlib/utils-regexp-from-string": "^0.1.1"
   },
   "devDependencies": {
