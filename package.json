@@ -53,7 +53,7 @@
     "@stdlib/string-base-reverse": "^0.2.2",
     "@stdlib/string-base-reverse-code-points": "^0.2.2",
     "@stdlib/string-base-reverse-grapheme-clusters": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/utils-regexp-from-string": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
