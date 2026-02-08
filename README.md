@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.2.3-deno/mod.js';
 ```
 
 #### reverseString( str\[, options] )
@@ -93,7 +93,7 @@ The function supports the following options:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@deno/mod.js';
+import reverseString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-reverse@v0.2.3-deno/mod.js';
 
 var str = reverseString( 'last man standing' );
 // returns 'gnidnats nam tsal'
