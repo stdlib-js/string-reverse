@@ -1,5 +1,0 @@
-"use strict";var u=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(o){throw (e=0, o)}};};var s=u(function(y,n){
-var m=require('@stdlib/assert-is-string/dist').isPrimitive,v=require('@stdlib/assert-is-plain-object/dist'),d=require('@stdlib/assert-has-own-property/dist'),p=require('@stdlib/array-base-assert-contains/dist').factory,g=require('@stdlib/string-base-reverse/dist'),c=require('@stdlib/string-base-reverse-code-points/dist'),f=require('@stdlib/string-base-reverse-grapheme-clusters/dist'),t=require('@stdlib/error-tools-fmtprodmsg/dist'),a=["grapheme","code_point","code_unit"],l={grapheme:f,code_point:c,code_unit:g},h=p(a);function q(r){var e,o,i;if(!m(r))throw new TypeError(t('1PL3F',r));if(i={mode:"grapheme"},o=arguments.length,o>1&&(e=arguments[1],!v(e)))throw new TypeError(t('1PL2V',e));if(e&&d(e,"mode")&&(i.mode=e.mode,!h(i.mode)))throw new TypeError(t('1PLE1',"mode",a.join('", "'),i.mode));return l[i.mode](r)}n.exports=q
-});var w=s();module.exports=w;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
